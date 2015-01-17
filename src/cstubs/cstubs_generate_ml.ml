@@ -189,7 +189,7 @@ let attributes : type a. a fn -> attributes =
    let open Cstubs_analysis in
    fun fn -> { float = float fn; noalloc = not (may_allocate fn) }
 
-let managed_buffer = `Ident (path_of_string "Memory_stubs.managed_buffer")
+let managed_buffer = `Ident (path_of_string "CI.managed_buffer")
 let voidp = `Ident (path_of_string "CI.voidp")
 let string = `Ident (path_of_string "string")
 let float_array = `Appl (path_of_string "array",
